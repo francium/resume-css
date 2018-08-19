@@ -1,0 +1,81 @@
+/* When printing */
+@media print {
+  /* Don't add underline or change color to links */
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+html {
+  line-height: 1.2em;
+
+  /* Font settings for whole document */
+  font-family: Arial;
+  font-size: 14px;
+}
+
+/* Bullet point list */
+ul {
+  margin: 0;
+  padding-left: 1em;
+  text-align: justify;
+}
+
+/* *** Util classes *** */
+
+/* Align test to the right */
+.text-right {
+  text-align: right;
+}
+
+.margin-bottom {
+  margin-bottom: 0.25em;
+}
+
+/* Use flex row layout */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Use flex layout and add space-between children */
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* *** Layout classes *** */
+
+/* Top level section */
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+/* Don't add margin at bottom of last one */
+.section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Section title */
+.section label {
+  border-bottom: 1px solid black;
+  margin: 0.25em 0 0.5em;
+  padding-bottom: 0.25em;
+}
+
+/* The top most section and also the with the persons name */
+.section.header {
+  font-size: 150%;
+  margin-bottom: 0.5em;
+}
+
+/* Second level section */
+.sub-section {
+  margin-bottom: 1em;
+}
+/* Don't add margin at botom of last one */
+.sub-section:last-of-type {
+  margin-bottom: 0;
+}
